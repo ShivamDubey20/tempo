@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
+  base: './',
   plugins: [react()],
   server: { port: 5173 },
   resolve: {
@@ -15,7 +16,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom', 'react-toastify', 'axios' , 'lucide-react'],
+      external: ['react-toastify', 'axios', 'lucide-react'],
     },
   },
 });
