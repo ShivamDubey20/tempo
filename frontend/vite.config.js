@@ -15,7 +15,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom', 'react-toastify', 'axios'],
+      external: ['react-router-dom', 'react-toastify', 'axios' , 'lucide-react'],
     },
   },
 });
