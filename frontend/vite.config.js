@@ -10,9 +10,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ['react-router-dom'],
+  },
   build: {
     rollupOptions: {
-      external: ['react-toastify' , 'axios'], 
+      external: ['react-router-dom', 'react-toastify', 'axios'],
     },
   },
 });
